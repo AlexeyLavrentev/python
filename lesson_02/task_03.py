@@ -19,3 +19,10 @@ elif 8 < month < 12:
     print(list[3])
 else:
     print('Введены некорректные данные')
+
+    # решение через dict:
+dict = {'зима': {12, 1, 2}, 'весна': set(range(3, 6)), 'лето': set(range(6, 9)), 'осень': set(range(9, 12))}
+
+for key, value in dict.items():
+    if month in value:
+        print(key)
